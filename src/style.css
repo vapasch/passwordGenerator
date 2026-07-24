@@ -1,0 +1,82 @@
+/* backgrounds */
+#background_0{
+    -fx-background-color: #2d3250;
+}
+
+#background_1{
+    -fx-background-color: #424769;
+}
+
+
+
+#generate_output{
+    -fx-background-color: #de6238;
+    -fx-text-fill: white;
+}
+
+
+
+/* all labels */
+.label {
+    -fx-text-fill: white;
+}
+
+
+
+/* slider */
+.slider .track {
+    -fx-pref-height: 10px;
+    -fx-background-color: white;
+    
+}
+
+.slider .thumb { /* the circle */
+    -fx-pref-width: 18px;
+    -fx-pref-height: 18px;
+    -fx-background-color: #de6238;
+}
+
+
+
+
+
+
+/* checkbox */
+.check-box {
+    -fx-text-fill: white;
+    
+    /* fix for java default bluebox */
+    -fx-focus-color: transparent; 
+    -fx-faint-focus-color: transparent;
+}
+
+/* checkmark color */
+.check-box:selected .mark {
+    -fx-background-color: #de6238;
+}
+
+/* box for checkmark color*/
+.check-box .box {
+    -fx-border-color: #de6238;
+    -fx-background-color: white;
+    -fx-border-width: 1;
+}
+
+.check-box:selected{
+    -fx-focus-color: transparent; 
+    -fx-faint-focus-color: transparent;
+}
+
+
+
+
+/* textfield */
+#password_output{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-border-width: 2px;
+    -fx-border-color: #de6238;
+
+}
+
