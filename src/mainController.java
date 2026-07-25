@@ -9,9 +9,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.control.Slider;
 
-
 import javafx.scene.control.Alert;
-import java.util.Random;
+import java.security.SecureRandom;
 
 import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
@@ -103,7 +102,7 @@ public class mainController {
         StringBuilder password = new StringBuilder();
         int totalCharLength = Integer.parseInt(char_length1.getText());
         
-        Random random = new Random();
+        SecureRandom random = new SecureRandom();
         for (int i = 0; i < totalCharLength; i++) {
             int index = random.nextInt(charPool.length());
         password.append(charPool.charAt(index));
