@@ -12,6 +12,10 @@ import javafx.scene.control.Slider;
 import javafx.scene.control.Alert;
 import java.util.Random;
 
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
+
+import javafx.scene.Node;
 
 
 public class mainController {
@@ -31,16 +35,36 @@ public class mainController {
     @FXML private TextField password_output;
     @FXML private Slider slider1;
     @FXML private VBox vbox_all;
+    @FXML private Button copy_button;
     
     
     // runs once when the app opens AND sets up the slider listener to change the label value from slider output
     public void initialize() {
-         slider1.valueProperty().addListener((observable, oldValue, newValue) -> {
+        slider1.valueProperty().addListener((observable, oldValue, newValue) -> {
         double newVal = newValue.doubleValue();
         changeCharNumber(newVal);
+        updateSliderTrack();
+        });
+
+        slider1.skinProperty().addListener((obs, oldSkin, newSkin) -> {
+        if (newSkin != null) {
+            updateSliderTrack();
+        }
         });
     }
-    
+
+
+    // slider color    
+    private void updateSliderTrack() {
+        Node track = slider1.lookup(".track");
+        if (track == null) return;
+
+        double percentage = (slider1.getValue() - slider1.getMin()) / (slider1.getMax() - slider1.getMin()) * 100;
+        track.setStyle(String.format(
+        "-fx-background-color: linear-gradient(to right, #de6238 0%%, #de6238 %1$.1f%%, white %1$.1f%%, white 100%%);",
+        percentage
+    ));
+}
 
 
     
@@ -87,7 +111,12 @@ public class mainController {
     }
 
     
-
+    @FXML private void onCopyClick() {
+        Clipboard clipboard = Clipboard.getSystemClipboard();
+        ClipboardContent content = new ClipboardContent();
+        content.putString(password_output.getText());
+        clipboard.setContent(content);
+    }
 
     
     

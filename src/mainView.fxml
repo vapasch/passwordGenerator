@@ -20,7 +20,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <VBox fx:id="vbox_all" layoutX="193.0" layoutY="117.0" prefHeight="288.0" prefWidth="247.0" spacing="25.0">
+            <VBox fx:id="vbox_all" layoutX="60.0" layoutY="156.0" prefHeight="288.0" prefWidth="247.0" spacing="25.0">
                <children>
                   <VBox fillWidth="false" prefHeight="44.0" prefWidth="238.0">
                      <children>
@@ -66,12 +66,17 @@
                   </CheckBox>
                </children>
             </VBox>
-            <Button fx:id="generate_output" layoutX="226.0" layoutY="405.0" mnemonicParsing="false" onAction="#onGenerateClick" prefHeight="58.0" prefWidth="180.0" text="Generate" textAlignment="CENTER">
+            <Button fx:id="generate_output" layoutX="437.0" layoutY="353.0" mnemonicParsing="false" onAction="#onGenerateClick" prefHeight="58.0" prefWidth="180.0" text="Generate" textAlignment="CENTER">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <TextField fx:id="password_output" layoutX="16.0" layoutY="59.0" prefHeight="27.0" prefWidth="599.0" />
+            <TextField fx:id="password_output" editable="false" layoutX="16.0" layoutY="59.0" prefHeight="27.0" prefWidth="478.0" />
+            <Button fx:id="copy_button" layoutX="501.0" layoutY="51.0" mnemonicParsing="false" onAction="#onCopyClick" prefHeight="44.0" prefWidth="123.0" text="Copy" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>

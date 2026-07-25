@@ -8,10 +8,20 @@
 }
 
 
-
-#generate_output{
+/* buttons */
+.button {
     -fx-background-color: #de6238;
-    -fx-text-fill: white;
+    -fx-text-fill: #fff8f3;
+}
+
+.button:hover {
+    -fx-background-color: #e37c59;
+    -fx-text-fill: #ffffff;
+}
+
+.button:pressed {
+    -fx-background-color: #c9481d;
+    -fx-text-fill: #ffe8dc;
 }
 
 
@@ -70,6 +80,8 @@
 
 
 
+
+
 /* textfield */
 #password_output{
     -fx-background-color: white;
@@ -79,4 +91,5 @@
     -fx-border-color: #de6238;
 
 }
+
 
