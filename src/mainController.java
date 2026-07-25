@@ -9,6 +9,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.control.Slider;
 
+
 import javafx.scene.control.Alert;
 import java.util.Random;
 
@@ -69,7 +70,7 @@ public class mainController {
 
     
     
-    //function for password generation
+    //method for password generation
     @FXML private void onGenerateClick() {
         
         StringBuilder charPool = new StringBuilder(); //I use StringBuilder because String can't be modified

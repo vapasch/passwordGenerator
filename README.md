@@ -19,7 +19,6 @@ A desktop password generator built with JavaFX. Pick a length, choose which char
 - VS Code with the Java Extension Pack (recommended)
 
 
-##Screenshot
-![[Pasted image 20260725031547.png]]
+![[Pasted image screenshot]]
 
 
