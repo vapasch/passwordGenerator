@@ -1,18 +1,25 @@
-## Getting Started
+# Password Generator
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A desktop password generator built with JavaFX. Pick a length, choose which character types to include, and generate a random password you can copy to your clipboard with one click.
 
-## Folder Structure
+## Features
 
-The workspace contains two folders by default, where:
+- Adjustable password length (8–64 characters) via a styled slider, with a live-updating label
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Toggle character types independently: uppercase letters, lowercase letters, numbers, and special characters
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- One-click **Copy** button to send the generated password straight to your clipboard
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Requirements
+
+- JDK 21 or later
+
+- VS Code with the Java Extension Pack (recommended)
+
+
+##Screenshot
+![[Pasted image 20260725031547.png]]
+
+
